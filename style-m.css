@@ -1,0 +1,604 @@
+@media (min-width:375px) and (max-width:450px) {
+    .container{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding:8px 20px;
+        background: #333331;
+        border: none;
+        border-bottom: 2px solid #FDB106;
+        margin: 0;
+        z-index: 10;
+    }
+    .header__logo{
+        width: 94px;
+        height: 12px;
+        background-image: url(/img/logo.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        margin-right: 13px;
+    }
+    .header__nav{
+        display: none;
+        width: 300px;
+        height: auto;
+        margin-right: 114px;
+    }
+    .nav__ul{
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .nav__ul li{
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .header__number{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding-left: 27px;
+        box-sizing: border-box;
+        border: none;
+        border-left: 3px solid #FDB106;
+        margin-right: 33px;
+    }
+    .header__phone{
+        margin: 0;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 17px;
+        color: white;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .header__span{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 15px;
+        color: #FDB106;
+        white-space: nowrap;
+        text-align: left;
+    }
+    .header__menu{
+        display: flex;
+        width: 28px;
+        height: 19px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+    .header__menu span{
+        width: 28px;
+        height: 2px;
+        background: #FDB106;
+    }
+    .taxi{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 558px;
+        margin: 0;
+        position: relative;
+        padding: 0;
+        background-image: url(/img/small-bg.png);
+        margin: 0;
+    }
+    .taxi__ellips{
+        background: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 558px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 22px;
+        padding-left: 20px;
+        padding-right: 42px;
+        box-sizing: border-box;
+        z-index: 0;
+        background-color:  rgba(68, 66, 66, 0.7);
+    }
+    .kia-text{
+        display: block;
+        font-family: 'Days';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FDB106;
+        margin-bottom: 40px;
+    }
+    .kia-text span{
+        display: block;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        color: #FFFFFF;
+    }
+    .taxi__text{
+        margin-bottom: 118px;
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .taxi__text span{
+        display: block;
+        color: #FDB106;
+        margin-top: 2px;
+    }
+    .content__timing{
+        display: flex;
+        flex-direction: column;
+        width: 268px;
+        text-align:center;
+        align-items: center;
+        margin-left: 57px;
+    }
+    .content__time{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+    }
+    .content__strong{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+        color: #FDB106;
+        margin: 0;
+        margin-bottom: 17px;
+    }
+    .point{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .content__btn{
+        display: none;
+    }
+    .content__btn-mobile{
+        display: block;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+        padding: 17px 28px;
+        background: #FDB106;
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        border: none;
+        white-space: nowrap;
+        margin: 0;
+        cursor: pointer;
+        margin-left: 17px;
+    }
+    .new{
+        width: 100%;
+        padding: 0;
+        padding-top: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+    .new__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 30px;
+        white-space: wrap;
+        width: 340px;
+        height: 60px;
+        margin-bottom: 30px;
+    }
+    .new__block-one{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .new__card{
+        box-shadow: 0px 0px 30px #FDB106;
+        border-radius: 40px;
+        width: 340px;
+        height: 534px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 41px;
+    }
+    .new__card-txt-m{
+        display: block;
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333331;
+        margin-bottom: 5px;
+    }
+
+    .new__card-txt{
+        display: none;
+    }
+    .new__card-txt2{
+        font-family: 'Days';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 120%;
+    }
+    .new__card-pr{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FDB106;
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .new__card-pr2{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FDB106;
+        margin-bottom: 14px;
+    }
+    .card__img{
+        width: 310px;
+        height: 164px;
+        margin-bottom: 0;
+    }
+    .card__btn, 
+    .card__btn2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        padding: 12px 28px;
+    }
+    .new__block-two{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+    .archive{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        box-sizing: border-box;
+        margin: 35px;
+    }
+    .archive__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 30px;
+        width: 203px;
+    }
+    .best{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 22px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 29px;
+        box-sizing: border-box;
+    }
+    .best__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 240px;
+        height: 90px;
+        white-space: wrap;
+    }
+    .best__wrapper{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .best__one{
+        width: 303px;
+        height: 208px;
+        padding-top: 26px;
+        padding-left: 28px;
+        padding-bottom: 27px;
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .best__block{
+        display: flex;
+    }
+    .best__one div:nth-child(4){
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .best__one div:nth-child(3){
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    .icon1{
+        width: 30px;
+        height: 30px;
+        margin-right: 22px;
+    }
+    .icon2{
+        width: 30px;
+        height: 30px;
+        margin-right: 22px;
+    }
+    .icon3{
+        width: 40px;
+        height: 20px;
+        margin-right: 11px;
+    }
+    .icon4{
+        width: 32px;
+        height: 30px;
+        margin-right: 19px;
+    }
+    .best__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        color: #000000;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .best__btn{
+        margin: 0;
+        border: none;
+        margin-bottom: 37px;
+        margin-top: 5px;
+    }
+    .best__info{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        width: 303px;
+        height: auto;
+    }
+    .info__mobile{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .info__mobile small:nth-child(1){
+        margin-bottom: 10px;
+    }
+    #hidden{
+        display: none;
+    }
+    .info__small{
+        margin: 0;
+    }
+    footer{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        padding-top: 31px;
+        padding-left: 36px;
+        padding-bottom: 33px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    .footer__heading{
+
+        display: block;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 15px;
+        margin-top: 31px;
+    }
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 52px;
+    }
+    .footer__cars1{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-right: 30px;
+    }
+    .footer__cars2{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .cars__block1{
+        display: flex;
+        margin: 0;
+    }
+    .cars__block2{
+        display: flex;
+        margin: 0;
+    }
+    .cars__block3{
+        display: flex;
+        margin: 0;
+    }
+    .ul__block{
+        text-decoration: none;
+        list-style: none;
+    }
+    .ul__block li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .footer__info{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .footer__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-right: 187px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin: 0;
+    }
+    .footer__txt2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0;
+    }
+    .footer__txt3-m{
+        display: block;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: white;
+        max-width: 335px;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        white-space: nowrap;
+        margin-bottom: 33px;
+    }
+    .footer__txt3{
+        display: none;
+    }
+
+}
