@@ -51,7 +51,8 @@
     justify-content: space-between;
     cursor: pointer;
 }
-.nav__ul li{
+.nav__ul a{
+    text-decoration: none;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -104,7 +105,7 @@
 /* taxi page */
 
 .taxi{
-    background-image: url(/img/background.png);
+    background-image: url(/img/mask.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -128,10 +129,28 @@
 .taxi__wrapper{
     display: flex;
     flex-direction: column;
-
+    margin-top: -130px;
 }
 .kia-text{
-    display: none;
+    display: block;
+    font-family: 'Days', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FDB106;
+    margin-bottom: 62px;
+}
+.kia-text span{
+    display: block;
+    font-family: 'Proxima Nova', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-transform: lowercase;
 }
 .taxi__text{
     font-family: 'Proxima Nova', sans-serif;
@@ -169,6 +188,18 @@
 #hours, 
 #minutes, 
 #seconds{
+    font-family: 'Days', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#days1, 
+#hours1, 
+#minutes1, 
+#seconds1{
     font-family: 'Days', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -226,7 +257,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-    padding: 17px 28px;
+    padding-top: 19px;
+    padding-bottom: 13px;
     background: #FDB106;
     box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
     border-radius: 50px;
@@ -234,6 +266,9 @@
     width: 268px;
     white-space: nowrap;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 /* page new  */

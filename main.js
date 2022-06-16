@@ -12,10 +12,10 @@ function updateTiming(){
     let secondsLeft = Math.floor(difference / 1000) % 60;//seconds
     
     
-    let days = document.querySelector('#days');
-    let hours = document.querySelector('#hours');
-    let minutes = document.querySelector('#minutes');
-    let seconds = document.querySelector('#seconds');
+    let days = document.querySelector('#days1');
+    let hours = document.querySelector('#hours1');
+    let minutes = document.querySelector('#minutes1');
+    let seconds = document.querySelector('#seconds1');
     
     // days.innerText = daysLeft;
     

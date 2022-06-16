@@ -47,7 +47,7 @@
         flex-direction: column;
         cursor: pointer;
     }
-    .nav__ul li{
+    .nav__ul a{
         cursor: pointer;
         display: flex;
         justify-content: space-between;
@@ -138,6 +138,11 @@
         z-index: 0;
         background-color:  rgba(68, 66, 66, 0.7);
     }
+    .taxi__wrapper{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
     .kia-text{
         display: block;
         font-family: 'Days';
@@ -179,7 +184,7 @@
         width: 268px;
         text-align:center;
         align-items: center;
-        margin-left: 57px;
+        margin-left: 70px;
     }
     .content__time{
         display: flex;
@@ -195,7 +200,7 @@
         text-align: center;
         color: #FDB106;
         margin: 0;
-        margin-bottom: 17px;
+        margin-bottom: 30px;
     }
     .point{
         margin-left: 5px;
@@ -205,25 +210,30 @@
         display: none;
     }
     .content__btn-mobile{
-        display: block;
         font-family: 'Proxima Nova';
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 22px;
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
         text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
-        padding: 17px 28px;
+        padding-top: 17px;
+        padding-bottom: 13px;
         background: #FDB106;
         box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
         border-radius: 50px;
         border: none;
+        width: 302px;
         white-space: nowrap;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
-        margin-left: 17px;
+        margin-left: 50px;
+        margin-top: 20px;
     }
     .new{
         width: 100%;
@@ -467,7 +477,10 @@
     .info__mobile small:nth-child(1){
         margin-bottom: 10px;
     }
-    #hidden{
+    .hidden{
+        display: none;
+    }
+    .hidden2{
         display: none;
     }
     .info__small{
@@ -601,4 +614,66 @@
         display: none;
     }
 
+}
+@media (min-width:375px) and (max-width:420px) {
+    .content__timing{
+        display: flex;
+        flex-direction: column;
+        width: 268px;
+        text-align:center;
+        align-items: center;
+        margin: 0;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    .content__time{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3px;
+    }
+    .content__strong{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 17px;
+        text-align: center;
+        color: #FDB106;
+        margin: 0;
+        margin-bottom: 17px;
+    }
+    .point{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .content__btn{
+        display: none;
+    }
+    .content__btn-mobile{
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 4px 4px 4px rgba(241, 199, 19, 0.1);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 28px;
+        padding-right: 28px;
+        background: #FDB106;
+        box-shadow: 6px 8px 12px -6px rgba(255, 187, 36, 0.34);
+        border-radius: 50px;
+        border: none;
+        width: 268px;
+        white-space: nowrap;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 40px;
+    }
 }
