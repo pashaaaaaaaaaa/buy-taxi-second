@@ -3,18 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
-    width: 1920px;
-    height: auto;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
+body{
+    border: 1px solid red;
 }
 .header{
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
     height: 100px;
     display: flex;
@@ -28,7 +22,6 @@
     background: #333331;
     border: none;
     border-bottom: 6px solid #FDB106;
-    margin: 0;
 }
 .header__logo{
     width: 220px;
@@ -105,31 +98,33 @@
 /* taxi page */
 
 .taxi{
-    background-image: url(/img/mask.svg);
-    background-position: center;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(/img/bg.png);
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 1920px;
     height: 600px;
-    margin: 0;
     position: relative;
 }
 .taxi__ellips{
-    background-image: url(/img/ellips.svg);
+    background-image: url(/img/elps.svg);
     background-repeat: no-repeat;
     position: absolute;
-    width: 1484px;
-    height: 1484px;
+    width: 100%;
+    height: 600px;
     left: 0;
-    top: -100px;
-    padding-top: 300px;
-    padding-left: 200px;
+    top: 0px;
+    padding-left:200px;
     box-sizing: border-box;
+    z-index: 0;
 }
 .taxi__wrapper{
     display: flex;
     flex-direction: column;
-    margin-top: -130px;
+    z-index: 10;
+    margin-top: 53px;
 }
 .kia-text{
     display: block;
@@ -216,16 +211,17 @@
     line-height: 17px;
     text-align: center;
     color: #FFFFFF;
+    margin-left: -3px;
 }
 .point{
     width: 8px;
     height: 15px;
-    margin-top: -10px;
+    margin-top: -20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 .point div{
     width: 5px;
@@ -273,6 +269,8 @@
 }
 /* page new  */
 .new{
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
     padding-top: 102px;
     padding-left: 200px;
@@ -429,6 +427,9 @@
     height: auto;
 }
 .archive{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -451,6 +452,8 @@
 }
 /* best page */
 .best{
+    max-width: 1920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,6 +595,8 @@
 }
 /* footer page */
 footer{
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
     height: 979px;
     padding-top: 103px;
@@ -684,6 +689,869 @@ footer{
     color: #FFFFFF;
     text-align: left;
     white-space: nowrap;
+}
+@media (min-width:1520px) and (max-width:1850px) {
+    .header{
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 11px;
+        padding-left: 100px;
+        padding-bottom: 13px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #333331;
+    }
+    .header__logo{
+        width: 200px;
+        height: 27px;
+        margin-right: 90px;
+    }
+    .header__navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-m{
+        display: none;
+    }
+    .header__ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__ul a{
+        text-decoration: none;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: 43px;
+        white-space: nowrap;
+    }
+    .call{
+        border: none;
+        border-left: 3px solid #FDB106;
+        box-sizing: border-box;
+        padding-left: 16px;
+        margin-left: 50px;
+    }
+    .call__phone{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+        text-align: left;
+    }
+    .call__phone-mob{
+        display: none;
+    }
+    .call__me{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FDB106;
+        margin: 0;
+        white-space: nowrap;
+    }
+    .burger{
+        display: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger span{
+     display: none;
+    }
+    .burger__active span:nth-child(2){
+        transform: rotate(-45deg) translateY(6px) translateX(-5px);
+    }   
+    .burger__active span:nth-child(1){
+        display: none;
+    }   
+    .burger__active span:nth-child(3){
+        transform: rotate(45deg);
+    }   
+    .menu-m{
+        display: none;
+    }
+    .menu-ul{
+        display: flex;
+        width: 250px;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        list-style: none;
+    }
+    .menu-ul li{
+        font-size: 18px;
+        color: #FDB106;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase
+    }
+    .menu-ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .burger__active .menu-m{
+        right: 0;
+    }
+    .taxi{
+        width: 100%;
+    }
+    .taxi__ellips{
+        padding-left: 250px;
+        padding-right: 100px;
+        left: -150px;
+    }
+    .new{
+        width: 100%;
+        padding: 100px;
+    }
+    .new__block-one{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        height: 979px;
+        padding: 0;
+        padding: 100px;
+        box-sizing: border-box;
+        background: #333331;
+    }
+    .footer__txt3-m{
+        display: none;
+    }
+    .footer__heading{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+    }
+    .footer__cars1{
+        display: flex;
+    }
+    .footer__cars2{
+        display: flex;
+    }
+    .cars__block1{
+        display: flex;
+        margin-right: 50px;
+    }
+    .cars__block2{
+        display: flex;
+        margin-right: 50px;
+    }
+    .cars__block3{
+        display: flex;
+        margin-right: 80px;
+    }
+    .ul__block{
+        text-decoration: none;
+        list-style: none;
+    }
+    .ul__block li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .footer__info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+    }
+    .footer__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-right: 187px;
+        text-align: left;
+    }
+    .footer__txt2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    .footer__txt3{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+        white-space: wrap;
+        word-wrap: break-word;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1520px) {
+    
+    .header{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+        background: #333331;
+    }
+    .header__nav{
+        margin-right: 50px;
+    }
+    .header__logo{
+        width: 150px;
+        height: 20px;
+        margin-right: 70px;
+    }
+    .header__navigation{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu-m{
+        display: none;
+    }
+    .header__ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__ul a{
+        text-decoration: none;
+        cursor: pointer;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-right: 15px;
+        white-space: nowrap;
+    }
+    .call{
+        border: none;
+        border-left: 3px solid #FDB106;
+        box-sizing: border-box;
+        padding-left: 16px;
+        margin-left: 15px;
+    }
+    .call__phone{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+        text-align: left;
+    }
+    .call__phone-mob{
+        display: none;
+    }
+    .call__me{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FDB106;
+        margin: 0;
+        white-space: nowrap;
+    }
+    .burger{
+        display: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger span{
+     display: none;
+    }
+    .burger__active span:nth-child(2){
+        transform: rotate(-45deg) translateY(6px) translateX(-5px);
+    }   
+    .burger__active span:nth-child(1){
+        display: none;
+    }   
+    .burger__active span:nth-child(3){
+        transform: rotate(45deg);
+    }   
+    .menu-m{
+        display: none;
+    }
+    .menu-ul{
+        display: flex;
+        width: 250px;
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        list-style: none;
+    }
+    .menu-ul li{
+        font-size: 18px;
+        color: #FDB106;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        text-transform: uppercase
+    }
+    .menu-ul li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .burger__active .menu-m{
+        right: 0;
+    }
+    .taxi{
+        width: 100%;
+    }
+    .taxi__ellips{
+        padding: 0;
+        padding-left: 400px;
+        left: -350px;
+    }
+    .new__block-one{
+        justify-content: space-evenly;
+    }
+    .new__block-one .new__card{
+        margin-right: 10px
+    }
+    .best__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 35px;
+        white-space: nowrap;
+    }
+    footer{
+        width: 100%;
+        height: 979px;
+        padding: 0;
+        padding: 100px 50px;
+        box-sizing: border-box;
+        background: #333331;
+    }
+    .footer__txt3-m{
+        display: none;
+    }
+    .footer__heading{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+    }
+    .footer__cars1{
+        display: flex;
+    }
+    .footer__cars2{
+        display: flex;
+    }
+    .cars__block1{
+        display: flex;
+        margin-right: 50px;
+    }
+    .cars__block2{
+        display: flex;
+        margin-right: 50px;
+    }
+    .cars__block3{
+        display: flex;
+        margin-right: 50px;
+    }
+    .ul__block{
+        text-decoration: none;
+        list-style: none;
+    }
+    .ul__block li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .footer__info{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 27px;
+    }
+    .footer__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin-right: 187px;
+        text-align: left;
+    }
+    .footer__txt2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+    }
+    .footer__txt3{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: left;
+        white-space: wrap;
+        word-wrap: break-word;
+        overflow-x: hidden;
+    }
+}
+@media (min-width:768px) and (max-width:1200px) {
+    .header{
+        width: 100%;
+        height: 60px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    }
+    .header__logo img{
+        width: 225px;
+        height: auto;
+        margin: 0;
+        margin-right: 13px;
+    }
+    .header__logo {
+        margin: 0;
+        margin-right: 13px;
+    }
+    .header__navigation{
+        display: none;
+        flex-direction: column;
+    }
+    .header__nav{
+        width: 600px;
+        margin-right: -20px;
+    }
+ 
+    .call{
+        padding-left: 27px;
+        margin: 0;
+    }
+    .call__phone{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .call__phone-mob{
+        display: block;
+        font-weight: 600;
+        color: white;
+        font-size: 15px;
+        line-height: 17px;
+        font-family: 'Proxima Nova', sans-serif;
+    }
+    .call__me{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        color: #FDB106;
+        margin: 0;
+        margin-right: 27px;
+    }
+    .burger{
+        display: block;
+        width: 28px;
+        height: 19px;
+        margin: 0;
+    }
+    .menu-m{
+        display: none;
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        background: white;
+        box-sizing: border-box;
+        padding: 20px;
+        right: -100%;
+        z-index: 20;
+        box-shadow: 0px 0px 10px #FDB106;
+        border-radius: 40px;
+        top: 70px;
+    }
+  
+    .burger span{
+        display: block;
+        background: #FDB106;
+        width: 28px;
+        height: 3px;
+        margin-bottom: 5px;
+    }
+    .nav__ul a{
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        white-space: wrap;
+        margin: 0;
+    }
+    .header__number{
+        border-left: 3px solid #FDB106;
+    }
+    .taxi__ellips{
+        left: -400px;
+        width: 100%;
+        padding-left: 450px;
+        border-radius: 50%;
+    }
+    .taxi{
+        background-size: cover;
+        background-position: center;
+    }
+    .new{
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .new__block-two{
+        padding: 0;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .new__block-one{
+        justify-content: space-evenly;
+    }
+    .archive{
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .best{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-top: 22px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 29px;
+        box-sizing: border-box;
+    }
+    .best__heading{
+        font-family: 'Days', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: 240px;
+        height: 90px;
+        white-space: wrap;
+    }
+    .best__wrapper{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .best__one{
+        width: 303px;
+        height: 208px;
+        padding-top: 26px;
+        padding-left: 28px;
+        padding-bottom: 27px;
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .best__block{
+        display: flex;
+    }
+    .best__one div:nth-child(4){
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .best__one div:nth-child(3){
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+    .icon1{
+        width: 30px;
+        height: 30px;
+        margin-right: 22px;
+    }
+    .icon2{
+        width: 30px;
+        height: 30px;
+        margin-right: 22px;
+    }
+    .icon3{
+        width: 40px;
+        height: 20px;
+        margin-right: 11px;
+    }
+    .icon4{
+        width: 32px;
+        height: 30px;
+        margin-right: 19px;
+    }
+    .best__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        color: #000000;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .best__btn{
+        margin: 0;
+        margin-bottom: 37px;
+    }
+    .best__info{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        width: 303px;
+        height: auto;
+    }
+    .info__mobile{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .info__mobile small:nth-child(1){
+        margin-bottom: 10px;
+    }
+    .hidden{
+        display: none;
+    }
+    .hidden2{
+        display: none;
+    }
+    .info__small{
+        margin: 0;
+    }
+    footer{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 50px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    .footer__heading{
+        display: block;
+        font-family: 'Proxima Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        white-space: nowrap;
+        margin-bottom: 15px;
+        margin-top: 31px;
+    }
+    .footer__wrapper{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 52px;
+    }
+    .footer__cars1{
+        display: flex;
+        /* flex-direction: column; */
+        text-align: left;
+        margin-right: 30px;
+    }
+    .footer__cars2{
+        display: flex;
+        /* flex-direction: column; */
+        text-align: left;
+    }
+    .cars__block1{
+        display: flex;
+        margin: 0;
+        margin-right: 30px;
+    }
+    .cars__block2{
+        display: flex;
+        margin: 0;
+        margin-right: 30px;
+    }
+    .cars__block3{
+        display: flex;
+        margin: 0;
+        margin-right: 30px;
+    }
+    .ul__block{
+        text-decoration: none;
+        list-style: none;
+    }
+    .ul__block li{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 20px;
+        color: #FFFFFF;
+        white-space: nowrap;
+    }
+    .footer__info{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .footer__txt{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-right: 187px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin: 0;
+    }
+    .footer__txt2{
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-align: center;
+        margin: 0;
+    }
+    .footer__txt3-m{
+        display: block;
+        font-family: 'Proxima Nova', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: white;
+        max-width: 335px;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        white-space: nowrap;
+        margin-bottom: 33px;
+    }
+    .footer__txt3{
+        display: none;
+    }
 }
 @import url(/style-m.css);
 @import url(/style-sm.css);

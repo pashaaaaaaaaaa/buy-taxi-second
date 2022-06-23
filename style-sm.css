@@ -358,6 +358,7 @@
         align-items: center;
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
     .archive{
         display: flex;
